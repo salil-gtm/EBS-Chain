@@ -40,7 +40,15 @@ Follow these steps to setup and run this code pattern. The steps are described i
 ## Instructions to Run
 - Similar to [Here](https://github.com/IBM/Decentralized-Energy-Composer)
 
+## Authors
+
+* **Salil Gautam** - [salil-gtm](https://github.com/salil-gtm)
+* **Anirudh Murali** - [Anirudh-Murali](https://github.com/Anirudh-Murali)
+* **Rohan Chougule** - [rchougule](https://github.com/rchougule)
 
 ## Additional Resources
 * [Hyperledger Fabric Docs](http://hyperledger-fabric.readthedocs.io/en/latest/)
 * [Hyperledger Composer Docs](https://hyperledger.github.io/composer/latest/introduction/introduction.html)
+
+ ## Acknowledgments
+* Made with &#9829; during #HackathonPune 2018 in 24 hrs.
