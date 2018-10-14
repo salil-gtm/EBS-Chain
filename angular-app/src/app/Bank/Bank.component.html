@@ -11,33 +11,33 @@
             <div class="form-group text-left">
               <label for="bankID">Bank ID</label>
                 <input formControlName="bankID" type="text" class="form-control">
-                </div>      
+                </div>
             <div class="form-group text-left">
-              <label for="name">Bank Name</label>  
-                <input formControlName="name" type="text" class="form-control">          
-            </div>
-                     
-            <div class="form-group text-left">
-              <label for="coinsValue">Coins Balance</label>  
-                <input formControlName="coinsValue" type="text" class="form-control">          
-            </div>            
-
-            <div class="form-group text-left">
-              <label for="cashValue">Cash Balance</label>  
-                <input formControlName="cashValue" type="text" class="form-control">          
+              <label for="name">Bank Name</label>
+                <input formControlName="name" type="text" class="form-control">
             </div>
 
             <div class="form-group text-left">
-              <label for="cashCurrency">Cash Currency</label>  
+              <label for="coinsValue">Coins Balance</label>
+                <input formControlName="coinsValue" type="text" class="form-control">
+            </div>
+
+            <div class="form-group text-left">
+              <label for="cashValue">Cash Balance</label>
+                <input formControlName="cashValue" type="text" class="form-control">
+            </div>
+
+            <div class="form-group text-left">
+              <label for="cashCurrency">Cash Currency</label>
 
               <div>
               <select name="cashCurrency" formControlName="cashCurrency">
-                <option value="USD">USD</option>                
+                <option value="INR">INR</option>
               </select>
               </div>
             </div>
 
-                
+
         </div>
         <div class="modal-footer">
           <button (click)="addBank(myForm);" type="submit" class="btn btn-success" data-dismiss="modal">Submit</button>
@@ -60,12 +60,12 @@
         <div class="modal-body">
             <div class="form-group text-left">
               <label for="bankID">Bank ID</label>
-                <input [ngModel]="bankID"formControlName="bankID" type="text" class="form-control">            
-            </div>          
+                <input [ngModel]="bankID"formControlName="bankID" type="text" class="form-control">
+            </div>
             <div class="form-group text-left">
               <label for="name">Bank Name</label>
-                <input [ngModel]="name"formControlName="name" type="text" class="form-control">              
-            </div>                      
+                <input [ngModel]="name"formControlName="name" type="text" class="form-control">
+            </div>
         </div>
         <div class="modal-footer">
           <button (click)="updateBank(myForm)" type="submit" class="btn btn-success" data-dismiss="modal">Submit</button>
@@ -107,7 +107,7 @@
 		<strong>Error:</strong> {{errorMessage}}
 	</div>
   <div class="row">
-      <h1 class="heading">Banks </h1> 
+      <h1 class="heading">Banks </h1>
   </div>
 
  <div class="row">
@@ -121,33 +121,33 @@
       <table class="table table-bordered table-responsive table-hover">
         <thead class="thead">
           <tr class="thead-cols">
-            
+
                 <th class="bc">Bank ID</th>
-            
+
                 <th class="bc">Bank Name</th>
-            
-                <th class="bc">Coins Balance</th>  
+
+                <th class="bc">Coins Balance</th>
 
                 <th class="bc">Cash Balance</th>
 
                 <th class="bc">Cash Currency</th>
 
-                <th class="bc">Actions</th>       
+                <th class="bc">Actions</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let bank of allBanks">
-          
+
                 <td>{{bank.bankID}}</td>
-            
-                <td>{{bank.name}}</td>            
+
+                <td>{{bank.name}}</td>
 
                 <td>{{bank.coinsValue}}</td>
 
                 <td>{{bank.cashValue}}</td>
 
                 <td>{{bank.cashCurrency}}</td>
-           
+
             <td>
 
               <button (click)="getForm(bank.bankID);" type="button" class="btn btn-success" data-toggle="modal" data-target="#updateBankModal">Update</button>

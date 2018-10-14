@@ -16,7 +16,7 @@ import 'rxjs/add/operator/toPromise';
 export class TransactionRBComponent {
   
   //define rate of conversion
-  private bankCoinsPerCash = 10;
+  private bankCoinsPerCash = 1;
   private bankCashPerCoins = (1 / this.bankCoinsPerCash).toFixed(3);
   
   //define variables

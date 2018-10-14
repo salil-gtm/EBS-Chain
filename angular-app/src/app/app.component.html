@@ -1,8 +1,8 @@
 <nav class="navbar navbar-inverse navbar2">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand navfont" href="#">Decentralized Energy</a>
-      
+      <a class="navbar-brand navfont" href="#">EBS Chain</a>
+
     </div>
     <ul class="nav navbar-nav navbar-right">
 
@@ -10,9 +10,8 @@
             <a class="dropdown-toggle navfont" data-toggle="dropdown" href="#">Info
               <span class="caret navfont"></span></a>
             <ul class="dropdown-menu">
-              
-              <li><a [routerLink]="['/About']">About</a></li>
-              <li><a [routerLink]="['/AllTransactions']">Blockchain</a></li>              
+
+              <li><a [routerLink]="['/AllTransactions']">Blockchain</a></li>
             </ul>
           </li>
 
@@ -20,11 +19,11 @@
         <a class="dropdown-toggle navfont" data-toggle="dropdown" href="#">Participants
           <span class="caret navfont"></span></a>
         <ul class="dropdown-menu">
-          
+
           <li><a [routerLink]="['/Resident']">Residents</a></li>
           <li><a [routerLink]="['/Bank']">Banks</a></li>
           <li><a [routerLink]="['/UtilityCompany']">Utility Companies</a></li>
- 
+
         </ul>
       </li>
 
@@ -33,11 +32,11 @@
         <a class="dropdown-toggle navfont" data-toggle="dropdown" href="#">Transactions
           <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          
+
           <li><a [routerLink]="['/TransactionRR']">Resident to Resident</a></li>
           <li><a [routerLink]="['/TransactionRU']">Resident to Utility Company</a></li>
           <li><a [routerLink]="['/TransactionRB']">Resident to Bank</a></li>
- 
+
         </ul>
       </li>
 
@@ -46,24 +45,23 @@
         <a class="dropdown-toggle navfont" data-toggle="dropdown" href="#">Assets
           <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          
+
           <li><a [routerLink]="['/Coins']">Coins</a></li>
-          
+
           <li><a [routerLink]="['/Energy']">Energy</a></li>
 
           <li><a [routerLink]="['/Cash']">Cash</a></li>
-          
+
         </ul>
       </li>
 
-      
+
 
     </ul>
   </div>
 </nav>
-
+<!-- <div class ="gifbox">
+  <img src="https://i.pinimg.com/originals/9d/72/5f/9d725fe7ec601fb2744d8d704f402a10.gif"></div> -->
 <div class = "bodybackground">
   <router-outlet></router-outlet>
 </div>
-
-

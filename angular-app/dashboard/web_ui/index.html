@@ -1,0 +1,454 @@
+  <html>
+  <head>
+  <script src="jquery-3.1.1.min.js"></script>
+	  <link rel="stylesheet" href="materialize.css">
+	  <script src="materialize.js"></script>
+	  <script src="https://code.highcharts.com/highcharts.js"></script>
+	  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+	   <link rel="stylesheet" href="animate.css">
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	    <style type="text/css">
+	    ::-webkit-scrollbar {
+		    display: none;
+		}
+		::-moz-scrollbar {
+		    display: none;
+		}
+		.pow{
+		    box-shadow: inset 0 600px 0 0 #37474f;
+		}
+		.pointer{
+			cursor: pointer;
+		}
+		.above{
+			background: #0E1217;
+		}
+		#fbButton{
+			position: absolute;
+			top:57%;
+			left: 50%;
+			-webkit-transform: translate(-50%,0%);
+		}
+    #fsButton{
+      position: absolute;
+      top:57%;
+      left: 50%;
+      -webkit-transform: translate(-50%,0%);
+    }
+	    </style>
+  </head>
+  <body  >
+  	<div class="above" id="firstScreen" style="height: 100%;width: 100%; background-color:black;">
+  		<img src="fire-loader.gif" height="60%" style="position: absolute;left: 50%;top: 20%;transform: translate(-50%,0);">
+  		<div id="fbButton" onclick="login()" style="top: 70%;">
+        	<a class="waves-effect waves-yellow btn-large"><i class="material-icons left">done</i>Login</a>
+        </div>
+        <div class="load" style="position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);">
+        </div>
+  	</div>
+  <div id="Insurer" style="display: none;">
+		<nav class="nav-extended teal">
+		    <div class="nav-wrapper">
+		      <a onclick="showUserData()" class="brand-logo center">EBS Chain</a>
+		      <ul id="nav-mobile" class="right">
+
+		      </ul>
+		      <ul class="left">
+		      	<li><a href="#" data-activates="slide-out" class="butt"><i class="material-icons">menu</i></a></li>
+		      </ul>
+
+		      <ul class="tabs tabs-transparent">
+		        <li class="tab"><a class="active" href="#test1">Summary</a></li>
+
+		      </ul>
+		    </div>
+		  </nav>
+		  <div id="test1" class="col s12 grey-darken-4">
+		  	<div class="row blue-grey darken-3">
+			  	<div class="col l4 s12 m6 hoverable">
+			  		 <div class="card">
+					    <div class="card-image waves-effect waves-block waves-light" id="conta">
+
+					    </div>
+					    <div class="card-content ">
+					      <span class="card-title activator grey-text text-darken-4"><i class="material-icons right"></i></span>
+					      <p><a href="#"></a></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+					  </div>
+				</div>
+				<div class="col l4 s12 m6 hoverable">
+			  		 <div class="card">
+					    <div class="card-image waves-effect waves-block waves-light" id="conta1">
+
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4"><i class="material-icons right"></i></span>
+					      <p><a href="#"></a></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+					  </div>
+				</div>
+				<div class="col l4 s12 m6 hoverable">
+			  		 <div class="card">
+					    <div class="card-image waves-effect waves-block waves-light" id="conta2">
+
+					    </div>
+					    <div class="card-content">
+					      <span class="card-title activator grey-text text-darken-4"><i class="material-icons right"></i></span>
+					      <p><a href="#"></a></p>
+					    </div>
+					    <div class="card-reveal">
+					      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+					      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+					    </div>
+					  </div>
+				</div>
+				<div class="col l12 s12 m12 hoverable grey-darken-4">
+          <div class="col s12">&nbsp</div>
+          <div class="col s12">&nbsp</div>
+          <div  onclick="showUserData()" ><div class="col s12">&nbsp</div>
+              <a class="waves-effect waves-yellow btn-large" style="top: 90%; left:40%"><i class="material-icons left">done</i>Access Blockchain</a>
+            </div>
+
+      				<div class="col s12">&nbsp</div>
+      				<div class="col s12">&nbsp</div>
+      				<div class="col s12">&nbsp</div>
+      				<div class="col s12">&nbsp</div>
+
+      				<div class="col s12">&nbsp</div>
+      				<div class="col s12">&nbsp</div>
+      				<div class="col s12">&nbsp</div>
+      				<div class="col s12">&nbsp</div>
+      				<div class="col s12">&nbsp</div>
+      				<div class="col s12">&nbsp</div>
+      				<div class="col s12">&nbsp</div>
+      				<div class="col s12">&nbsp</div>
+                                <div class="col s12">&nbsp</div>
+                                <div class="col s12">&nbsp</div>
+                                <div class="col s12">&nbsp</div>
+                                <div class="col s12">&nbsp</div>
+                                <div class="col s12">&nbsp</div>
+                                <div class="col s12">&nbsp</div>
+                                <div class="col s12">&nbsp</div>
+                                <div class="col s12">&nbsp</div>
+
+				</div>
+        <br>
+
+				<div class="col s12">&nbsp</div>
+				<div class="col s12">&nbsp</div>
+		  	</div>
+		  </div>
+
+
+
+		<ul id="slide-out" class="left side-nav">
+			<li><div class="userView">
+				  <div class="background">
+				    <img src="assests/other/bg1.jpg">
+				  </div>
+				  <a href="#!user"><img class="circle" id="sideBarUsrPic" src="assests/other/download.jpg"></a>
+				  <a href="#!name"><span class="white-text name" id="nameUsr">John Doe</span></a>
+				  <a href="#!email"><span class="white-text email" id="emailUsr">jdandturk@gmail.com</span></a>
+				</div>
+			</li>
+			<li><a href="#!"><i class="material-icons" onmouseover="chartsCal(1)">attach_money</i>Current Policies</a></li>
+			<li><div class="divider"></div></li>
+			<li><a href="#!"><i class="material-icons" onmouseover="chartsCal(2)">bubble_chart</i>Statistics</a></li>
+			<li><div class="divider"></div></li>
+			<!-- <li><a href="#!"><i class="material-icons">cloud</i>File Claims</a></li>
+			<li><div class="divider"></div></li>
+			<li><a href="#!"><i class="material-icons">alarm</i>Connect Fitbit</a></li>
+			<li><div class="divider"></div></li> -->
+			<li><a href="#!"><i class="material-icons">help</i>Help</a></li>
+			<li><div class="divider"></div></li>
+			<li><a href="#!"><i class="material-icons">local_pizza</i>About Us</a></li>
+
+		</ul>
+	</div>
+
+<script type="text/javascript">
+
+  $('#bt').click(function() {
+       $('#ex').click();
+  });
+</script>
+<script type="text/javascript">
+
+function showUserData(){
+	// $(".lifeClass").removeClass('fadeInUp');
+  window.location.replace("http://40.87.88.210:4200/");
+	// $(".lifeClass").addClass('fadeOutDown');
+	// setTimeout(function(){
+	// 	$("#test2").addClass('pow');
+	// 	$("#userContent").css("display","block");
+  //
+	// },1500)
+
+}
+
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+	$('.butt').sideNav({
+      menuWidth: 300, // Default is 240
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: false // Choose whether you can drag to open on touch screens
+    }
+  );
+  function redirect(){
+
+  }
+	function login(){
+		$("#fbButton").remove();
+		$(".load").html('<div class="preloader-wrapper big active center-align"> <div class="spinner-layer spinner-blue"> <div class="circle-clipper left"> <div class="circle"></div> </div><div class="gap-patch"> <div class="circle"></div> </div><div class="circle-clipper right"> <div class="circle"></div> </div> </div> <div class="spinner-layer spinner-red"> <div class="circle-clipper left"> <div class="circle"></div> </div><div class="gap-patch"> <div class="circle"></div> </div><div class="circle-clipper right"> <div class="circle"></div> </div> </div> <div class="spinner-layer spinner-yellow"> <div class="circle-clipper left"> <div class="circle"></div> </div><div class="gap-patch"> <div class="circle"></div> </div><div class="circle-clipper right"> <div class="circle"></div> </div> </div> <div class="spinner-layer spinner-green"> <div class="circle-clipper left"> <div class="circle"></div> </div><div class="gap-patch"> <div class="circle"></div> </div><div class="circle-clipper right"> <div class="circle"></div> </div> </div> </div>');
+		Materialize.toast('Login Successful', 3000, 'rounded');
+		setTimeout(()=>{
+			Materialize.toast('Taking to something Beautiful!', 3000, 'rounded');
+		},1000)
+                setTimeout(()=>{
+                        window.location.replace("http://40.87.88.210:4200/");
+			// $("#firstScreen").addClass("animated slideOutLeft");
+			// $("#Insurer").css("display","block")
+			// setTimeout(()=>{
+			// 	$("#firstScreen").remove();
+			// 	Materialize.toast('Welcome to the console!', 3000, 'rounded');
+			// 	abcde();
+			// },1000)
+		},4500)
+
+	}
+</script>
+ <script>
+     	$(function () {
+
+});
+     </script>
+       <script>
+function abcde() {
+
+        // Build the chart
+        Highcharts.chart('conta', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie',
+                backgroundColor :'#546e7a',
+                color:'white',
+                width: null,
+        		height: 230
+            },
+            title: {
+            	style:{
+            		color:'white'
+            	},
+                text: 'Debt Summary'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: '',
+                colorByPoint: true,
+                data: [{
+                    name: 'Amount Paid',
+                    y: 56.33,
+                }, {
+                    name: 'Remaining Amount',
+                    y: 24.03,
+                    sliced: true,
+                    selected: true
+                }]
+            }]
+        });
+
+
+
+          Highcharts.chart('conta1', {
+    	chart: {
+                backgroundColor :'#546e7a',
+                color:'white',
+                width: null,
+        		height: 230
+            },
+        title: {
+        	style:{
+            		color:'white'
+            	},
+            text: 'Energy Generated',
+            x: -20 //center
+        },
+        subtitle: {
+        	style:{
+            		color:'white'
+            	},
+            text: 'per Month (2018)',
+            x: -20
+        },
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                'Jul', 'Aug', 'Sep', 'Oct']//, 'Nov', 'Dec']
+        },
+        yAxis: {
+            title: {
+                text: 'Percentage'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        tooltip: {
+            valueSuffix: 'kWh'
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: 'kWh',
+            data: [621, 619, 653, 655, 675, 620, 521, 555, 601, 632]//, 13.9, 9.6]
+        }]
+    });
+
+    Highcharts.chart('conta2', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie',
+            backgroundColor :'#546e7a',
+            color:'white',
+            width: null,
+        height: 230
+        },
+        title: {
+          style:{
+            color:'white'
+          },
+            text: 'EMI Summary'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false
+                },
+                showInLegend: true
+            }
+        },
+        series: [{
+            name: '',
+            colorByPoint: true,
+            data: [{
+                name: 'EMI Paid',
+                y: 21.33,
+            }, {
+                name: 'Remaining EMI',
+                y: 78.67,
+                sliced: true,
+                selected: true
+            }]
+        }]
+    });
+
+  Highcharts.chart('conta3', {
+        chart: {
+            type: 'area',
+            backgroundColor :'#546e7a',
+            color:'white',
+            width: null,
+    		height: 230
+        },
+        title: {
+            text: 'Expected illuminicity this week'
+        },
+        subtitle: {
+            text: 'Source: Wikipedia.org'
+        },
+        xAxis: {
+            categories: ['1750', '1800', '1850', '1900', '1950', '1999', '2050'],
+            tickmarkPlacement: 'on',
+            title: {
+                enabled: false
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Billions'
+            },
+            labels: {
+                formatter: function () {
+                    return this.value / 1000;
+                }
+            }
+        },
+        tooltip: {
+            split: true,
+            valueSuffix: ' millions'
+        },
+        plotOptions: {
+            area: {
+                stacking: 'normal',
+                lineColor: '#666666',
+                lineWidth: 1,
+                marker: {
+                    lineWidth: 1,
+                    lineColor: '#666666'
+                }
+            }
+        },
+        series: [{
+            name: 'Asia',
+            data: [502, 635, 809, 947, 1402, 3634, 5268]
+        }, {
+            name: 'Africa',
+            data: [106, 107, 111, 133, 221, 767, 1766]
+        }, {
+            name: 'Europe',
+            data: [163, 203, 276, 408, 547, 729, 628]
+        }, {
+            name: 'America',
+            data: [18, 31, 54, 156, 339, 818, 1201]
+        }, {
+            name: 'Oceania',
+            data: [2, 2, 2, 6, 13, 30, 46]
+        }]
+    });
+
+
+
+    };
+
+     </script>
+
+
+</body>
+  </html>
