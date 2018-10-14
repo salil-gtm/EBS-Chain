@@ -1,5 +1,7 @@
 # Energy Backed Securitization using Blockchain
-
+Solar power gives long term returns however the initial cost of setting up is quite high. India
+being a tropical country has huge potential for generating solar energy, but the citizens need
+to be further incentivized.
 
 # Architecture Flow
 
