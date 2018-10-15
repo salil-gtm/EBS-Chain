@@ -30,6 +30,15 @@ to be further incentivized.
 
 # Screenshots
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/salil-gtm/EBS-Chain/master/Screenshot%20from%202018-10-14%2010-50-31.png">
+  <img src="https://raw.githubusercontent.com/salil-gtm/EBS-Chain/master/Screenshot%20from%202018-10-14%2010-50-50.png">
+  <img src="https://raw.githubusercontent.com/salil-gtm/EBS-Chain/master/Screenshot%20from%202018-10-14%2010-51-25.png">
+  <img src="https://raw.githubusercontent.com/salil-gtm/EBS-Chain/master/Screenshot%20from%202018-10-14%2010-51-50.png">
+  <img src="https://raw.githubusercontent.com/salil-gtm/EBS-Chain/master/Screenshot%20from%202018-10-14%2010-51-56.png">
+  <img src="https://raw.githubusercontent.com/salil-gtm/EBS-Chain/master/Screenshot%20from%202018-10-14%2010-51-17.png">
+  <img src="https://raw.githubusercontent.com/salil-gtm/EBS-Chain/master/Screenshot%20from%202018-10-14%2010-53-55.png">
+</p>
 
 # Running the Application
 Follow these steps to setup and run this code pattern. The steps are described in detail below.
