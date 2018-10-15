@@ -1,7 +1,14 @@
+<p align="left">
+  <img width="100" height="100" src="https://raw.githubusercontent.com/salil-gtm/EBS-Chain/master/Logo.png">
+</p>
+
 # Energy Backed Securitization using Blockchain
 Solar power gives long term returns however the initial cost of setting up is quite high. India
 being a tropical country has huge potential for generating solar energy, but the citizens need
 to be further incentivized.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/salil-gtm/EBS-Chain/master/Concept.png">
+</p>
 
 # Architecture Flow
 
@@ -20,6 +27,8 @@ to be further incentivized.
 * Hyperledger Composer
 * Angular Framework
 * Loopback
+
+# Screenshots
 
 
 # Running the Application
